@@ -1,0 +1,37 @@
+@charset "utf-8";
+.block-regiter-page{
+  position: relative;
+  margin-top: 50px;
+  .title-block-page{
+    position: absolute;
+    left: 50%;
+    top: -23px;
+    z-index: 1;
+    @include transform(translate(-50%,0));
+    h3{
+      display: inline-block;
+      background: #3D235F;
+      @include border-radius(10px);
+      padding: 10px 30px;
+      @include fsz(16);
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $white;
+    }
+  }
+  .bg-title-center{
+    padding-top: 40px;
+  }
+}
+.block-bg-inner{
+  background: rgba(61, 35, 95, 0.5);
+  @include border-radius(10px);
+  padding: 15px;
+  .title-block{
+    @include fsz(14);
+    font-weight: bold;
+    border-left: 2px solid $white;
+    padding-left: 15px;
+    margin-bottom: 30px;
+  }
+}
